@@ -72,7 +72,7 @@ public class AutoUpdateService extends Service {
         HttpUtil.sendHttpRequest(address, new HttpCallbackListener() {
             @Override
             public void onFinish(String response) {
-                Utility.handleWeatherResponse(AutoUpdateService.this,response);
+                Utility.handleWeatherResponse(AutoUpdateService.this, response);
             }
 
             @Override
